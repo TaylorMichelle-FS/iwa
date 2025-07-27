@@ -1,0 +1,132 @@
+/* alternate box model */
+* {
+  box-sizing: border-box;
+}
+
+/* Have a plan to not get confused with stylesheet and stay organized: body/fonts, headings, links, alignments.  */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(108, 48, 37);
+}
+
+#wrapper {
+  width: 90%;
+  border: 0.3rem solid rgb(173, 108, 97);
+  margin: auto;
+  padding: 1.25rem;
+}
+
+header {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* (Not sure if box-sizing is used using universal selector)Check more on alternative box model  */
+h1 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0.3rem 0.3rem 0.9rem white;
+
+  background-color: rgb(173, 108, 97);
+  width: 50%;
+  padding: 1.25rem;
+  border: 5px solid firebrick;
+  margin: auto;
+  box-shadow: 0.3rem 0.3rem 0.9rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(173, 108, 97);
+  text-shadow: 0.3rem 0.3rem 0.9rem black;
+}
+h3 {
+  font-size: 1rem;
+}
+p {
+  line-height: 1.25;
+}
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(255, 186, 174);
+}
+a:hover {
+  color: black;
+}
+
+/* Figure out how to center-align multiple images */
+img {
+  display: block;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0rem;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 5rem;
+}
+
+ol {
+  color: rgb(255, 186, 174);
+}
+
+/* Forms styles */
+form {
+  border: 0.2rem solid rgb(255, 186, 174);
+  padding: 1rem;
+}
+form > div {
+  margin-bottom: 1rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 100%;
+  border: none;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+#form-check > label {
+  display: inline-block;
+}
+
+textarea {
+  font-family: inherit;
+}
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.375rem 2rem;
+  border-radius: 0.25rem;
+  font-size: 100%;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(255, 186, 174);
+}
